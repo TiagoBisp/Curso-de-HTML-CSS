@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone em midias html5.ico" type="image/x-icon"> 
+    <style>
+        h1 {background-color: antiquewhite;} 
+    </style>
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Tente abrir essa site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <!--No source media type eu posso mudar a parte da width para Min ou Max o tamanho da largura da imagem e colocar o px (0 50 e a folgar)-->
+    <!--Colocar o source media type em ordem do menor do maior.-->
+    <!--No srcset o ctrl+espaço não funciona, terá que digitar o nome da imagem sem espaço.-->
+     <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotopequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/fotomedia.png" type="image/png">
+        <img src="Imagens/fotogrande.png" alt="Imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <!--Controls para ativar o controle do audio é o autoplay para a musica tocar automaticamente (no autoplay funciona depende do navegador)-->
+    <!--Formatos compativeis em todos navegadores: MP3, WAV, OGG-->
+
+<audio src="midia/projetopentateuco.mpeg" controls autoplay> </audio>
+<!--preload tem ás opçoes:
+auto- será ativado o audio automatico depois do carregamento completo do site.
+metadata- Só carregar algumas informações necessárias
+none- Não carregar nada
+-->
+<audio preload="metadata">
+    <source src="midia/projetopentateuco.mpeg" type="audio/mpeg">
+    <source src="midia/projetopentateuco.ogg" type="audio/ogg">
+    <source src="midia/projetopentateuco.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/projetopentateuco.mpeg">Clique para baixar o arquivo MP3</a></p>
+</audio>
+</body>
+</html>

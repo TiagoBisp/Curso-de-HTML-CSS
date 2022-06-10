@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {font-family:Arial, Helvetica, sans-serif; 
+ /* 
+ Medidas Absolutas: cm,mm,in,px,pt,pc
+ Medidas Relativas: em,ex,rem,vw,vh,%
+ 16px geralmente =  1em  (USE PX OU EM)
+ */   
+
+   
+font-size: 16px; 
+font-weight: bolder ;
+font-style: italic ;
+text-decoration: underline;}
+
+/*shorthand font
+font-style -> font-weigth -> font-size -> font-family
+font: italic bolder 3em 'work sans', sans-serif*/
+
+/*Pesos literais da font-weight:lighter,normal,bold,bolder */
+
+/*
+Weight: Peso
+widht: Largura
+heigth: Altura
+*/

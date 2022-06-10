@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Videos-icon.ico" type="image/x-icon">
+    <style>
+        h1 {background-color: aqua;}
+    </style>
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <!--Coloque "width" para ajustar o tamanho do video.-->
+    <!--Coloque todos os tipos de arquivos de video para todos os navegadores reproduzir-->
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor:</p>
+    <!--Forma Simples: <video src="midia/Paisagem.mp4" width="500" controls></video> -->
+    <video poster="imagens/paisagem.jpg" width="500" controls loop >
+        <source src="midia/Paisagem.mp4" type="video/mp4">
+        <p> <strong>Se seu navegador não tem compatibilidade com reprodução de videos!</strong> </p>    
+    </video>
+    <h1>Inserido videos do Youtube!</h1>
+    <!--Conselho é cria o proprio canal do youtube e linkar os videos que deseja no site atraves da função de compartilhamento incorporar do youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Inserido video do site Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/387244198?h=3de5dd0bed&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
