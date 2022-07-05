@@ -29,61 +29,61 @@
     <caption>Notas de Tiago Souza</caption>
         <thead>
         <tr>
-            <th rowspan="2" >Área</th>
-            <th rowspan="2" >Disciplinas</th>
-            <th colspan="2" >Notas</th>
-            <th rowspan="2" >Média</th>
+            <th scope="col" rowspan="2" >Área</th>
+            <th scope="col" rowspan="2" >Disciplinas</th>
+            <th scope="colgroup" colspan="2" >Notas</th>
+            <th scope="col" rowspan="2" >Média</th>
         </tr>
         <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+            <th scope="col" >Nota 1</th>
+            <th  scope="col" >Nota 2</th>
         </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4" >Exatas</th> 
-                <th>Matématica</th>
+                <th scope="rowgroup" rowspan="4" >Exatas</th> 
+                <th scope="row" >Matématica</th>
                 <td>9.1</td>
                 <td>8.6</td>
                 <td>17.7</td>
             </tr>
             <tr>
-                <th>Física</th>
+                <th scope="row" >Física</th>
                 <td>6.7</td>
                 <td>7.1</td>
                 <td>13.8</td>
             </tr>
             <tr>
-                <th>Química</th>
+                <th scope="row" >Química</th>
                 <td>9.0</td>
                 <td>8.5</td>
                 <td>17.5</td>
             </tr>
             <tr>
-                <th>Bíologia</th>
+                <th scope="row" >Bíologia</th>
                 <td>8.2</td>
                 <td>8.0</td>
                 <td>16.2</td>
             </tr>
             <tr>
-                <th class="total" colspan="4">Total de Exatas</th>
+                <th scope="row" class="total" colspan="4">Total de Exatas</th>
                 <td class="total"> <strong>65.2</strong></td>
             </tr>
             <tr>
-                <th rowspan="2" >Humanas</th>
-                <th>Hitória</th>
+                <th scope="rowgroup" rowspan="2" >Humanas</th>
+                <th scope="row" >Hitória</th>
                 <td>10</td>
                 <td>9.7</td>
                 <td>19.7</td>
             </tr>
             <tr>
-                <th>Geografia</th>
+                <th scope="row" >Geografia</th>
                 <td>9.1</td>
                 <td>9.5</td>
                 <td>18.6</td>
             </tr>
             <tr>
-                <th class="total" colspan="4" >Total de Humanas</th>
+                <th scope="row" class="total" colspan="4" >Total de Humanas</th>
                 <td class="total" > <strong>38.3</strong></td>
             </tr>
         </tbody>
